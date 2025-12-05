@@ -17,7 +17,7 @@ export default function App() {
   
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | null>(null);
 
   const updateMetrics = useCallback(() => {
     if (status === AnalysisStatus.RECORDING) {
