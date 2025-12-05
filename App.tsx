@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { AudioAnalyzer } from './services/audioAnalyzer';
 import { analyzeAudioWithGemini } from './services/geminiService';
 import Spectrogram from './components/Spectrogram';

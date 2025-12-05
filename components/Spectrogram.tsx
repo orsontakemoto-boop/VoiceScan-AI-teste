@@ -7,7 +7,7 @@ interface SpectrogramProps {
 
 const Spectrogram: React.FC<SpectrogramProps> = ({ dataArray, isActive }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const tempCanvasRef = useRef<HTMLCanvasElement>(null);
+  const tempCanvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
     // Initialize temp canvas once

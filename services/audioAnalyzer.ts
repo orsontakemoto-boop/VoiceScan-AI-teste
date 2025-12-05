@@ -38,7 +38,7 @@ export class AudioAnalyzer {
 
   getFrequencyData(): Uint8Array {
     if (!this.analyser || !this.dataArray) return new Uint8Array(0);
-    this.analyser.getByteFrequencyData(this.dataArray);
+    this.analyser.getByteFrequencyData(this.dataArray as unknown as Uint8Array);
     return this.dataArray;
   }
 
